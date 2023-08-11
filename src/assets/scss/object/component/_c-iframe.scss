@@ -1,0 +1,45 @@
+@use "../../global" as *;
+
+.c-iframe01 {
+    &__instagram {
+        iframe {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+}
+
+.c-iframe02 {
+    &__tiktok {
+        blockquote{
+            border: none;
+            background-color: $white;
+        }
+        iframe {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+}
+
+.c-iframe03{
+    &__youtube {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.c-iframe04{
+    &__googlemap {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

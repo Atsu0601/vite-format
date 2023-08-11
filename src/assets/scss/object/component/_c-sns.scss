@@ -1,0 +1,279 @@
+@use "../../global" as *;
+
+.c-sns01 {
+    display: flex;
+    gap: 1rem;
+
+    &__btnsns {
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-top: 1rem;
+        box-sizing: border-box;
+        color: #fff;
+        fill: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+
+        div {
+            margin-top: .5rem;
+            font-size: .8rem;
+        }
+
+        &:hover svg {
+            animation: c-sns01-animation 1s cubic-bezier(.25, .46, .45, .94) both;
+        }
+    }
+
+    .btn-twitter {
+        background-color: #369BEE;
+    }
+
+    .btn-facebook {
+        background-color: #375A94;
+    }
+
+    .btn-line {
+        background-color: #5DB40F;
+    }
+
+    .btn-pinterest {
+        background-color: #B83026;
+    }
+}
+
+@keyframes c-sns01-animation {
+    from {
+        transform: scale(0);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.c-sns02 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__btnsns {
+        padding: 0.6rem 1rem;
+        box-sizing: border-box;
+        border-radius: 0.2rem;
+        width: 9rem;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s;
+
+        span {
+            display: inline-block;
+            width: 6rem;
+            text-align: center;
+        }
+
+        &:hover {
+            transform: c-sns02-animation(1.1);
+        }
+    }
+
+    .btn-twitter {
+        background-color: #369BEE;
+    }
+
+    .btn-facebook {
+        background-color: #375A94;
+    }
+
+    .btn-line {
+        background-color: #5DB40F;
+    }
+
+    .btn-pinterest {
+        background-color: #B83026;
+    }
+}
+
+@keyframes c-sns02-animation {
+    from {
+        transform: scale(0);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.c-sns03 {
+    display: flex;
+    gap: 0.5rem;
+
+    &__btnsns {
+        display: flex;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        box-sizing: border-box;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        svg {
+            display: block;
+            margin: auto;
+        }
+
+    }
+
+    .btn-twitter {
+        background-color: #369BEE;
+    }
+
+    .btn-facebook {
+        background-color: #375A94;
+    }
+
+    .btn-line {
+        background-color: #5DB40F;
+    }
+
+    .btn-pinterest {
+        background-color: #B83026;
+    }
+
+}
+
+.c-sns04 {
+    display: flex;
+    background-color: #999;
+    border-radius: 0.2rem;
+
+    &__btnsns {
+        display: flex;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        box-sizing: border-box;
+        border-radius: 0.2rem;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            transition: 0.5s;
+        }
+
+        svg {
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .btn-twitter:hover {
+        background-color: #369BEE;
+    }
+
+    .btn-facebook:hover {
+        background-color: #375A94;
+    }
+
+    .btn-line:hover {
+        background-color: #5DB40F;
+    }
+
+    .btn-pinterest:hover {
+        background-color: #B83026;
+    }
+}
+
+.c-sns05 {
+    &__btnsns {
+        margin: 5px;
+        padding: 0px;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 2px;
+            padding: 6px 10px;
+            width: 100px;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .btn-twitter {
+        background-color: #369BEE;
+    }
+
+    .btn-facebook {
+        background-color: #375A94;
+    }
+
+    .btn-line {
+        background-color: #5DB40F;
+    }
+
+    .btn-pinterest {
+        background-color: #B83026;
+    }
+}
+
+.c-sns06 {
+    &__btnsns {
+        display: inline;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        padding: 14px 80px;
+
+        &.btn-facebook {
+            background-color: #2e4a88;
+            box-shadow: 0 4px 0 #1B3D82;
+        }
+
+        &.btn-twitter {
+            background-color: #008DDE;
+            box-shadow: 0 4px 0 #0078BD;
+        }
+
+        &.btn-line {
+            background-color: #00B900;
+            box-shadow: 0 4px 0 #009900;
+        }
+
+        &.btn-pinterest {
+            background-color: #C92228;
+            box-shadow: 0 4px 0 #B31A1F;
+        }
+    }
+}
+

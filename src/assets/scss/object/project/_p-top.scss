@@ -1,0 +1,23 @@
+@use "../../global" as *;
+
+.p-top {
+    &__mainvisual {
+        width: 100%;
+        height: toRem(500);
+    }
+
+    &__site-logo {
+        max-width: toRem(240);
+        margin: toRem(120) auto toRem(180);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__ttl{
+        margin-top: toRem(70);
+        text-align: center;
+        font-size: toRem(30);
+    }
+}
