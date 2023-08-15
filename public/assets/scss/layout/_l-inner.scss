@@ -1,0 +1,16 @@
+// @use "../global" as *;
+@use "../global/function" as *;
+@use "../global/setting" as *; 
+
+.l-inner {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $innerWidth + $padding-pc * 2;
+  padding-right: toRem(strip-unit($padding-pc));
+  padding-left: toRem(strip-unit($padding-pc));
+  @include mq(md) {
+    padding-right: toRem(strip-unit($padding-sp));
+    padding-left: toRem(strip-unit($padding-sp));
+  }
+}

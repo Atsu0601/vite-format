@@ -1,8 +1,0 @@
-@use "../../global" as *;
-
-.p-single{
-    margin: toRem(60) 0 toRem(150);
-    &__date{
-        color: #888;
-    }
-}

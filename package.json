@@ -17,6 +17,8 @@
     "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "prettier": "^3.0.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "vite-plugin-copy": "^0.1.6",
     "vite-plugin-webp": "^1.1.3"
   }
 }

@@ -1,10 +1,18 @@
 // vite.config.js
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import copy from 'rollup-plugin-copy';
 
 export default defineConfig({
   root: 'src',
   publicDir: 'assets', // この行を変更
+  plugins: [
+    copy({
+      targets: [
+        { src: 'src/assets/*', dest: 'dist/assets' }
+      ]
+    })
+  ],
   css: {
     preprocessorOptions: {
       scss: {},
@@ -15,8 +23,8 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        'index': resolve(__dirname, 'src/pages/index.html'),
-        'about': resolve(__dirname, 'src/pages/about/index.html')
+        'index': resolve(__dirname, 'src/index.html'),
+        'about': resolve(__dirname, 'src/about/index.html')
       },
       output: {
         entryFileNames: `assets/js/[name].js`,
